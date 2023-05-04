@@ -18,13 +18,18 @@
         font-size: 16px;
         gap: 2rem;
         font-weight: 500;
-        
+
 
     }
 
     a {
         text-decoration: none;
         color: $color-primaire;
+
+        &.active {
+            text-decoration: underline;
+        }
+
     }
 }
 
@@ -36,8 +41,8 @@
                 height: 35px;
             }
         }
-        
-        &__list{
+
+        &__list {
             font-size: 12px;
             padding: 0;
             gap: 1rem;
