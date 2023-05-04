@@ -1,15 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav>
       <ul className="header__list">
         <li>
-          <a href="#">ACCUEIL</a>
+          <NavLink to="/">
+            <a>ACCUEIL</a>
+          </NavLink>
         </li>
 
         <li>
-          <a href="#">A PROPOS</a>
+          <NavLink to="/about">
+            <a>A PROPOS</a>
+          </NavLink>
         </li>
       </ul>
     </nav>
