@@ -27,6 +27,9 @@ body {
   text-decoration: none;
   color: #FF6060;
 }
+.header a.active {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 600px) {
   .header__logo img {
@@ -76,6 +79,17 @@ body {
 .container {
   margin-top: 1rem;
 }
+.container__link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: #FF6060;
+}
 .container__grid {
   padding: 1rem 0;
   margin: auto;
@@ -97,6 +111,7 @@ body {
   background-color: #FF6060;
 }
 .container__txt {
+  text-decoration: none;
   padding-left: 1rem;
   width: 40%;
   color: white;
@@ -134,4 +149,27 @@ body {
   .footer__txt {
     font-size: 12px;
   }
+}
+.error {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error__title {
+  margin-top: 0;
+  font-size: 15vw;
+  font-weight: 700;
+  color: #FF6060;
+  margin-bottom: 0;
+}
+.error__txt {
+  font-weight: 500;
+  color: #FF6060;
+  margin-bottom: 9rem;
+  text-align: center;
+}
+.error__link {
+  color: #FF6060;
 }/*# sourceMappingURL=main.css.map */
