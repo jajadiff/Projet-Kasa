@@ -7,13 +7,13 @@ function Navbar() {
       <ul className="header__list">
         <li>
           <NavLink to="/">
-            <a>ACCUEIL</a>
+            ACCUEIL
           </NavLink>
         </li>
 
         <li>
           <NavLink to="/about">
-            <a>A PROPOS</a>
+            A PROPOS
           </NavLink>
         </li>
       </ul>
