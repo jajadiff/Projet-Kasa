@@ -1,0 +1,59 @@
+.modale {
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+
+        border-radius: 5px;
+        color: white;
+        font-weight: 500;
+        height: 1.5rem;
+        font-size: 13px;
+        background-color: $color-primaire;
+        // padding-left: 1rem;
+        // padding-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+
+    &__subtitle {
+
+        margin: 0;
+        background-color: $color-secondaire;
+        border-radius: 5px;
+        font-size: 12px;
+        color: $color-primaire;
+
+
+
+    }
+
+
+    &__arrow {
+        width: 25px;
+        transform: rotate(180deg);
+
+    }
+    &__arrow--open {
+        transform: rotate(0deg);
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .modale__subtitle--open {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        min-height: 200px;
+
+    }
+
+
+}
