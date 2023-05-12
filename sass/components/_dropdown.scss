@@ -25,14 +25,12 @@
     }
 
     &__subtitle {
-
+        display: none;
         margin: 0;
         background-color: $color-secondaire;
         border-radius: 5px;
         font-size: 12px;
         color: $color-primaire;
-
-
 
     }
 
@@ -40,15 +38,24 @@
     &__arrow {
         width: 25px;
         transform: rotate(180deg);
+        cursor: pointer;
 
     }
+
     &__arrow--open {
         transform: rotate(0deg);
         transition: transform 0.3s ease-in-out;
 
     }
 
+    &__arrow--close {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+
+    }
+
     .modale__subtitle--open {
+        display: block;
         padding-top: 1rem;
         padding-left: 1rem;
         min-height: 200px;
